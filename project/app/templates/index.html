@@ -1,9 +1,236 @@
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GoToRun</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #footer {
+            position: fixed;
+            left : -300px; top : 25%;
+            background-image: url("static/runnerpic/pic0.png");
+            width : 296px;
+            height: 296px;
+        }
+        #iii{
+            width : 100%;
+            height: 100%;
+        }
+        #w {
+            position: fixed;
+            left : 10px; top : 40px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w1 {
+            position: fixed;
+            left : 500px; top : 400px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w2 {
+            position: fixed;
+            left : 800px; top : 60px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w3 {
+            position: fixed;
+            left : 50px; top : 500px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w4 {
+            position: fixed;
+            left : 100px; top : 200px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w5 {
+            position: fixed;
+            left : 600px; top : 400px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w6 {
+            position: fixed;
+            left : 800px; top : 650px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w7 {
+            position: fixed;
+            left : 40px; top : 10px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w8 {
+            position: fixed;
+            left : 450px; top : 150px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #w9{
+            position: fixed;
+            left : 60px; top : 500px ;
+            width: 120px; height: 50px;
+            font-size: 30px;
+            border-radius: 5px;
+        }
+        #d1{
+            position: fixed;
+            left : 0px; top : 370px ;
+        }
+        #d11{
+            position: fixed;
+            left : 700px; top : 160px ;
+        }
+        #d4{
+            position: fixed;
+            left : 100px; top : 100px ;
+        }
+        body{
+            background-image: url("static/fon/fon1.jpg");
+            width: 100%; height: 100%;
+        }
+    </style>
 </head>
-<body>
+<body id = "bod">
+    <button onclick="test(this)" id = "w" >КиРиЛл</button>
+    <button onclick="test(this)"  id = "w1">ИвАн</button>
+    <button onclick="test(this)"  id = "w2">ЕгОр</button>
+    <button onclick="test(this)"  id = "w3">ВлАд</button>
+    <button onclick="test(this)"  id = "w4">ДаНя</button>
+    <button onclick="test(this)"  id = "w5">СаШа</button>
+    <button onclick="test(this)"  id = "w6">ПоЛиНа</button>
+    <button onclick="test(this)"  id = "w7">ОлЯ</button>
+    <button onclick="test(this)"  id = "w8">УлЬяНа</button>
+    <button onclick="test(this)"  id = "w9">АлИсА</button>
+
+    <div id = "d1">
+        <img src="static/fon/gif1.gif", alt = "run", id = "g1", hidden/>
+    </div>
+    <div id = "d11">
+        <img src="static/fon/gif11.gif", alt = "run", id = "g11", hidden/>
+    </div>
+    <div id = "d4">
+        <img src="static/fon/gif4.gif", alt = "run", id = "g4", hidden/>
+    </div>
+    <div id = "footer">
+        <img src="static/userpic/Ivan1.png", alt = "run", id = "g"/>
+    </div>
+    <script>
+        var z = document.getElementById("bod")
+        function bac(){
+            let e1 = (Math.random() * 3).toFixed()
+            if (e1 == 1){
+                z.style.backgroundImage = "url('static/fon/fon2.jpg')"
+            }else{
+                if(e1 == 2){
+                    z.style.backgroundImage = "url('static/fon/fon3.jpg')"
+                }else{
+                    if(e1 == 3){
+                        z.style.backgroundImage = "url('static/fon/fon4(2).jpg')"
+                        document.getElementById("g4").hidden = false;
+                    }else{
+                        z.style.backgroundImage = "url('static/fon/fon1.jpg')"
+                        document.getElementById("g1").hidden = false;
+                        document.getElementById("g11").hidden = false;
+                    }
+                }
+            }
+        }
+        bac()
+        var w1 = "static/userpic/Ivan1.png"
+        var a1 = ["static/userpic/Alexsandr.png", "static/userpic/Alise.png", "static/userpic/Daniil.png", "static/userpic/Kirill.png", "static/userpic/Kirill1.png", "static/userpic/Polina.png", "static/userpic/Ivan.png", "static/userpic/Ivan1.png", "static/userpic/Uliana.png", "static/userpic/Olya.png", "static/userpic/Vlad.png"]
+        var a = ["static/runnerpic/pic0.png", "static/runnerpic/pic1.png", "static/runnerpic/pic2.png", "static/runnerpic/pic3.png", "static/runnerpic/pic4.png", "static/runnerpic/pic5.png", "static/runnerpic/pic6.png", "static/runnerpic/pic7.png", "static/runnerpic/pic8.png"]
+        var id = ["w", "w1", "w2", "w3", "w4", "w5", "w6", "w7", "w8", "w9"]
+        var d = document.getElementById("footer")
+        var g = document.getElementById("g")
+        var j = 0
+        var i = -600
+        function f(){
+            d.style.left = i +"px";
+            d.style.backgroundImage = "url(" + a[j] + ")"
+            j++;
+            i += 50;
+            if (j == 9){
+                j = 0;
+            }
+            if (i > 1300){
+                w1 = a1[(Math.random() * 10).toFixed()]
+                g.src = w1
+                i = -1000
+                j = 0
+            }
+        }
+        var h = false
+        var u = 125
+        var u1 = 55
+        var s;
+        function test(x){
+            ht = x.innerText
+            if (slov[ht][0] == w1 || slov[ht][1] == w1){
+                d.style.backgroundImage = "url('static/runnerpic/pic9.png')"
+                clearInterval(t)
+                setTimeout(ne, 2000);
+            }
+        }
+        function puls() {
+            id.forEach(function(item, i, arr){
+                s = document.getElementById(item);
+                s.style.height = u1 + "px";
+                s.style.width = u + "px";
+            })
+            if(u === 125){
+                u -= 5
+                u1 -= 5
+            }else{
+                if(!h && u == 120){
+                    u -= 5
+                    u1 -= 5
+                    h = true
+                }else {
+                    if(h && u == 120) {
+                        h = false
+                    }
+                    u += 5
+                    u1 += 5
+                }
+            }
+        }
+        function change() {
+            let sl_num = (Math.random() * 9).toFixed()
+            let sl_num1 = (Math.random() * 9).toFixed()
+            let sl1 = document.getElementById(id[sl_num]).innerText
+            let sl2 = document.getElementById(id[sl_num1]).innerText
+            document.getElementById(id[sl_num]).innerText =  sl2
+            document.getElementById(id[sl_num1]).innerText = sl1
+            var t1 = setTimeout(change1, (Math.random() * 10).toFixed() + 10)
+        }
+        function change1() {
+            let sl_num = (Math.random() * 9).toFixed();
+            let sl1 = document.getElementById(id[sl_num]).textContent;
+            document.getElementById(id[sl_num]).style.left = (Math.random() * 1000).toFixed() + "px";
+            document.getElementById(id[sl_num]).style.top = (Math.random() * 600).toFixed() + "px";
+            var t2 = setTimeout(change, (Math.random() * 10).toFixed() + 10);
+        }
+        function ne (){
+            t = setInterval(f, 100)
+        }
+        var slov = {"АлИсА":["static/userpic/Alise.png"], "ПоЛиНа":["static/userpic/Polina.png"], "УлЬяНа":[ "static/userpic/Uliana.png"], "ОлЯ":["static/userpic/Olya.png"], "СаШа": ["static/userpic/Alexsandr.png"], "КиРиЛл": ["static/userpic/Kirill.png", "static/userpic/Kirill1"], "ИвАн": ["static/userpic/Ivan.png", "static/userpic/Ivan1.png"], "ЕгОр": ["static/fyftfyf"], "ВлАд": ["static/userpic/Vlad.png"], "ДаНя": ["static/userpic/Daniil.png"]}
+        var t = setInterval(f, 100)
+        var r = setInterval(puls, 200)
+        change1()
+    </script>
 
 </body>
 </html>
